@@ -1,0 +1,6 @@
+<div *ngFor="let row of _values; index as i">
+    <!-- je parcours le tableau des values et pour chaque itérations tu as 1 row -->
+
+    <app-square *ngFor="let col of row; index as j" [row]="i" [column]="j"></app-square>
+    <!-- je parcours le tableau des row et pour chaque itérations tu as 1 col -->
+</div>
